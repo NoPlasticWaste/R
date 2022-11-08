@@ -85,8 +85,12 @@ rownames(saham.matrix) <- nama.saham
 BBCA <- c(1501,1050,1520,1550,1520)
 saham.baru <- rbind(saham.matrix, BBCA)
 
-#pemjumlahan matriks
+#penjumlahan matriks
 colSums(saham.baru)
 rowSums(saham.baru)
 rowMeans(saham.baru)
 colMeans(saham.baru)
+
+#menambah kolom rata-rata
+rataan <- rowMeans(saham.baru)
+saham.baru <- cbind(saham.baru,rataan)
