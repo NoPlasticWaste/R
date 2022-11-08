@@ -80,3 +80,13 @@ nama.saham <- c("TLKM","KLBF")
 
 colnames(saham.matrix) <- hari
 rownames(saham.matrix) <- nama.saham
+
+#menambah baris saham baru
+BBCA <- c(1501,1050,1520,1550,1520)
+saham.baru <- rbind(saham.matrix, BBCA)
+
+#pemjumlahan matriks
+colSums(saham.baru)
+rowSums(saham.baru)
+rowMeans(saham.baru)
+colMeans(saham.baru)
