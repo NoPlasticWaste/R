@@ -66,3 +66,17 @@ matriks.bil
 
 matriks.bil <- matrix(bil, nrow=4) #diisi berdasarkan kolom
 matriks.bil <- matrix(bil, byrow = T, nrow = 4) #diisi berdasarkan row
+
+#Saham
+TLKM <- c(3000,3100,3050,3020,3200)
+KLBF <- c(324,343,300,321,355)
+
+saham <- c(TLKM, KLBF)
+saham.matrix <- matrix(saham, byrow = T, nrow = 2)
+
+#merubah nama kolom dan nama baris
+hari <- c("senin","selasa","rabu","kamis","jumat")
+nama.saham <- c("TLKM","KLBF")
+
+colnames(saham.matrix) <- hari
+rownames(saham.matrix) <- nama.saham
