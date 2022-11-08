@@ -54,3 +54,15 @@ angka >= 30
 
 filter.saya <- angka1 >= 30
 angka2[filter.saya]
+
+#Matriks
+1:20
+6:21
+
+bil <- 1:20
+matriks.bil <- matrix(bil)
+view(matriks.bil)
+matriks.bil
+
+matriks.bil <- matrix(bil, nrow=4) #diisi berdasarkan kolom
+matriks.bil <- matrix(bil, byrow = T, nrow = 4) #diisi berdasarkan row
